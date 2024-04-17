@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: black;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+header {
+  /* border: 1px solid saddlebrown; */
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  /* border: 1px solid sandybrown; */
+  width: 25%;
+  text-align: center;
+}
+.logo img {
+  width: 20%;
+  margin-top: 20px;
+}
+header ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  /* border: 1px solid cadetblue; */
+  padding: 7px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.6s;
+}
+header ul li a:hover,
+.active {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border-radius: 10px;
+}
+.product {
+  height: 60vh;
+  /* background-color: aliceblue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 90%;
+  margin: 17px auto;
+}
+.left {
+  color: aliceblue;
+}
+.product h1 {
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 50px;
+}
+.product p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.product button {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  transition: all 1s;
+  border-radius: 5px;
+}
+.product button:hover {
+  background-color: rgb(189, 163, 46);
+}
+.right {
+  /* border: 1px solid saddlebrown; */
+  height: 90%;
+  text-align: center;
+}
+.right img {
+  width: 60%;
+  position: relative;
+  animation: momen 5s infinite;
+}
+@keyframes momen {
+  0% {
+    right: 50px;
+  }
+  50% {
+    right: -50px;
+  }
+  100% {
+    right: 50px;
+  }
+}
+.all {
+  height: 19vh;
+  /* border: 1px solid saddlebrown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all ul {
+  /* border: 1px solid saddlebrown; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all ul li {
+  list-style: none;
+  text-decoration: none;
+  width: 20%;
+  /* border: 1px solid saddlebrown; */
+  text-align: center;
+}
+.all ul li img {
+  width: 50%;
+  transition: all 1s;
+  cursor: pointer;
+}
+.all ul li img:hover {
+  transform: scale(1.2);
+}
