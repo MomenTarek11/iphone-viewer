@@ -2,6 +2,8 @@
 
 just view the iphone photo with it's theme
 
-## The next step
+## Toplogies Used
 
-i will make it responsive
+Html 5
+Css
+JavaScript
